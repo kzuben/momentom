@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Momentum App</title>
+  <link rel="stylesheet" href="style-02.css">
+</head>
+<body>
+  <!-- <input type="checkbox" id="checkBox" onchange="changeRadio(this)">
+  <button onclick="findRgUser()">유저찾기</button> -->
+  <form id="login-form" class="hidden">
+    <input required minlength="4" maxlength="15" type="text" placeholder="What is your name?" />
+    <button>Log in</button>
+  </form>
+  <a href="https://nomadcoders.co">Go to Courses</a>
+  <h1 id="greeting" class="hidden"></h1>
+  <h2 id="clock">00:00:00</h2>
+  <form id="todo-form">
+    <input type="text" placeholder="Write a To Do and Press Enter" required >
+  </form>
+  <ul id="todo-list">
+    <!-- JS를 통해 list 생성할 예정 -->
+  </ul>
+  <div id="quotes">
+    <span></span>
+    <span></span>
+  </div>
+  <div id="weather">
+    <span></span>
+    <span></span>
+  </div>
+  <script src="./app-02.js"></script>
+  <script src="./quotes.js"></script>
+  <script src="./background.js"></script>
+  <script src="./todo.js"></script>
+  <script src="./weather.js"></script>
+  <!-- 모든 것은 html에서 시작되고, js에서는 그 element를 가져오는것 -->
+  <!--  input의 유효성을 체크하기 위해서는 form으로 감싸줘야한다. -->
+  <!-- input type submit 이나 button을 클릭하면... form이 submit 되어버린다. -->
+</body>
+</html>
+
+<script>
+  /* function changeRadio(zz) {
+    console.log(zz.checked);
+  } */
+
+  // function findRgUser() { // userId == jwjw 
+  //   const id = document.getElementById("userId").value;
+  //    // 가져온 id를 통해 서버와 통신
+  //    $.ajax({
+  //     url // 서버와 통신하는 URL ( 통신 길 )
+  //     data: id,
+  //     success: function(res) {
+  //       const result = res.data;
+  //       alert(result) 
+  //     },
+  //     error: function() {
+  //     }
+  //    })
+  // }
+  
+</script>

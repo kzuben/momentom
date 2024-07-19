@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="textWrap">
+    <div id="firstText">처음 텍스트 입니다.</div>
+    <!-- <input type="text"> -->
+  </div>
+  <div>
+    <button>텍스트 색상변경</button>
+    <button id="textChange">텍스트 변경</button>
+    <button>텍스트 추가</button>
+    <button>텍스트 삭제</button>
+  </div>
+
+  <div>
+    <h1>구구단</h1>
+    <input type="button" value="1">
+    <input type="button" value="2">
+    <input type="button" value="3">
+    <input type="button" value="4">
+    <input type="button" value="5">
+    <input type="button" value="6">
+    <input type="button" value="7">
+    <input type="button" value="8">
+    <input type="button" value="9">
+
+    <div>
+      <p></p> X <p></p>
+    </div>
+    <div>
+      <p></p> X <p></p>
+    </div>
+    <div>
+      <p></p> X <p></p>
+    </div>
+    <div>
+      <p></p> X <p></p>
+    </div>
+    <div>
+      <p></p> X <p></p>
+    </div>
+    <div>
+      <p></p> X <p></p>
+    </div>
+    <div>
+      <p></p> X <p></p>
+    </div>
+    <div>
+      <p></p> X <p></p>
+    </div>
+    <div>
+      <p></p> X <p></p>
+    </div>
+  
+  </div>
+</body>
+</html>
+<script>
+  const firstTxt = document.getElementById("firstText");
+  const btnChangeText = document.getElementById("textChange");
+ // const input = document.querySelector("input")
+  const btnChangeTextColor = document.querySelector("button:first-child")
+  const btnAddText = document.querySelector("button:nth-child(3)");
+  const textWrap = document.getElementById("textWrap");
+  const btnDeletText = document.querySelector("button:nth-child(4)");
+  
+  const btnPrint = document.querySelectorAll("input")
+  const print = document.getElementById("print")
+  const printFirst = document.querySelector("p:first-of-type")
+
+  printFirst.innerText = 1
+
+//console.log(btnPrint)
+
+btnPrint.forEach((btn) => {
+  console.log(btnPrint[0].value)
+  console.log(btnPrint[1].value)
+  console.log(btnPrint[2].value)
+  
+})
+
+
+
+/* for(i = 0; i < 9; i++) {
+
+  }
+
+
+  if( i === btnPrint[0].value) {
+   
+  } else {
+
+  }
+ */
+
+
+
+
+  function changeTextColor() {
+    firstTxt.style.color = "red"
+  }
+
+  btnChangeTextColor.addEventListener("click",changeTextColor)
+
+  function changeText() {
+   // firstTxt.innerText = input.value;
+  }
+
+  btnChangeText.addEventListener("click",changeText)
+
+  function addText() {
+   const span = document.createElement("span");
+  // span.innerText = input.value
+   textWrap.appendChild(span);
+  
+  }
+
+  btnAddText.addEventListener("click",addText)
+
+
+ 
+
+ 
+</script>

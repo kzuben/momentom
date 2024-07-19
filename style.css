@@ -1,0 +1,17 @@
+body {
+  background-color: beige;
+}
+
+
+h1 {
+    color : cornflowerblue;
+    transition: color .4s ease-in-out;
+}
+.sexy-font {
+    color:blueviolet
+}   
+
+.clicked {
+    color: tomato;
+}
+
